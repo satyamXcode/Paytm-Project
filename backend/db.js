@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
 
-mongoose.connect()
+mongoose.connect(
+    "mongodb+srv://jaiswalsatyam876:EdcQIbbhfMRNJKoQ@cluster0.iyyxmta.mongodb.net/apnaDatabase")
 .then(() => console.log("Connected to MongoDB..."))
 .catch(err => console.log("Could not connect to MongoDB...", err));
 
 const userSchema = new mongoose.Schema({
-    userName: {
+    username: {
         type: String,
         required: true,
         unique: true,

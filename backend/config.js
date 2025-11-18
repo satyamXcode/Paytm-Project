@@ -1,5 +1,3 @@
-const jwtSecret = "hello@25";
-
 module.exports = {
-    jwtSecret
+    jwtSecret : "hello@25"
 }
